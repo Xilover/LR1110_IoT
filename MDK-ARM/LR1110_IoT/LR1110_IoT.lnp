@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"lr1110_iot\startup_stm32l151xba.o"
+"lr1110_iot\lr11xx_hal.o"
+"lr1110_iot\main.o"
+"lr1110_iot\stm32l1xx_it.o"
+"lr1110_iot\stm32l1xx_hal_msp.o"
+"lr1110_iot\stm32l1xx_hal_i2c.o"
+"lr1110_iot\stm32l1xx_hal.o"
+"lr1110_iot\stm32l1xx_hal_rcc.o"
+"lr1110_iot\stm32l1xx_hal_rcc_ex.o"
+"lr1110_iot\stm32l1xx_hal_flash.o"
+"lr1110_iot\stm32l1xx_hal_flash_ex.o"
+"lr1110_iot\stm32l1xx_hal_flash_ramfunc.o"
+"lr1110_iot\stm32l1xx_hal_gpio.o"
+"lr1110_iot\stm32l1xx_hal_dma.o"
+"lr1110_iot\stm32l1xx_hal_pwr.o"
+"lr1110_iot\stm32l1xx_hal_pwr_ex.o"
+"lr1110_iot\stm32l1xx_hal_cortex.o"
+"lr1110_iot\stm32l1xx_hal_exti.o"
+"lr1110_iot\stm32l1xx_hal_spi.o"
+"lr1110_iot\stm32l1xx_hal_tim.o"
+"lr1110_iot\stm32l1xx_hal_tim_ex.o"
+"lr1110_iot\system_stm32l1xx.o"
+--strict --scatter "LR1110_IoT\LR1110_IoT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LR1110_IoT.map" -o LR1110_IoT\LR1110_IoT.axf
